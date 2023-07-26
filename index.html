@@ -18,6 +18,12 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome cdn link. -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- cuetom css -->
     <style>
@@ -44,50 +50,63 @@
 
 <body class="lato-font">
 
-
-    <nav class="container mx-auto">
-
-
-        <div class="navbar justify-between bg-white sm:bg-primary sm:rounded-[600px]">
+<!-- nav section -->
+    <nav class="container mx-auto mt-12">
 
 
+        <div class="navbar justify-between bg-white sm:bg-primary sm:rounded-[600px] md:px-12 md:py-7">
 
 
-            <div class="navbar-center hidden lg:flex" >
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text-lg font-medium text-white">Home</a></li>
-                <li><a class="text-lg font-medium text-white">About Us</a></li>
-                <li><a class="text-lg font-medium text-white">Shop</a></li>
-                <li><a class="text-lg font-medium text-white">All Fruits</a></li>
 
 
-              </ul>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-lg font-medium text-white">Home</a></li>
+                    <li><a class="text-lg font-medium text-white">About Us</a></li>
+                    <li><a class="text-lg font-medium text-white">Shop</a></li>
+                    <li><a class="text-lg font-medium text-white">All Fruits</a></li>
+
+
+                </ul>
             </div>
 
             <div class="navbar-end gap-x-4 items-center  w-auto">
-              <img src="img/logo.png" alt="">
-              <h1 class=" text-black sm:text-white font-bold text-2xl sm:text-[40px]">Fruit Burst</h1>
+                <img src="img/logo.png" alt="">
+                <h1 class=" text-black sm:text-white font-bold text-2xl sm:text-[40px]">Fruit Burst</h1>
             </div>
 
 
             <div class="navbar-start flex-row-reverse w-auto ">
                 <div class="dropdown">
-                  <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                  </label>
-                  <ul tabindex="0" class="menu menu-sm lg:block -left-24 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto">
-                    <li><a class="text-lg font-medium text-black">Home</a></li>
-                    <li><a class="text-lg font-medium text-black">About Us</a></li>
-                    <li><a class="text-lg font-medium text-black">Shop</a></li>
-                    <li><a class="text-lg font-medium text-black">All Fruits</a></li>
-                  </ul>
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-12" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm lg:block -left-24 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto">
+                        <li><a class="text-lg font-medium text-black">Home</a></li>
+                        <li><a class="text-lg font-medium text-black">About Us</a></li>
+                        <li><a class="text-lg font-medium text-black">Shop</a></li>
+                        <li><a class="text-lg font-medium text-black">All Fruits</a></li>
+                    </ul>
                 </div>
-                <input type="text" placeholder="Type here" class="input w-full max-w-xs hidden sm:inline-block" />
-              </div>
+               <form class="relative w-60 hidden sm:inline-block">
+                <input type="text" placeholder="Type here" class="input w-full max-w-md hidden sm:inline-block rounded-[50px]"  />
+                <i class=" text-lg absolute top-[20%] left-[83%] fa-solid fa-magnifying-glass"></i>
+               </form>
+            </div>
 
 
-          </div>
+        </div>
     </nav>
+
+
+
+    <!-- banner section. -->
+
 
 
 </body>
